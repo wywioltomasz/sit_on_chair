@@ -65,18 +65,22 @@
 </section>
 
 <!-- CENNIK -->
-<section class="grey-background">
+<section class='price'>
 
   <div class="main_width">
-
+    <div class="price_title">
+    <h2>Cennik</h2>
+    <span class="green_underline"></span>
+    </div>
     <!-- element z ceną 1-->
+    <div class="price__boxy">
     <div class="big_box">
       <div class="big_circle">
         <div class="small_circle"></div>
       </div>
       <h3>basic plan</h3>
       <div class="price_circle">
-        <p class="price">85<sup>99</sup></p> <!-- tu będzie :after dla "pln/msc" -->
+        <p class="pricecon">85<sup>99</sup></p> <!-- tu będzie :after dla "pln/msc" -->
       </div>
       <ul>
         <li>Zakup towaru + dowóz</li>
@@ -92,7 +96,7 @@
       </div>
       <h3>standard plan</h3>
       <div class="price_circle">
-        <p class="price">95<sup>99</sup></p> <!-- tu będzie :after dla "pln/msc" -->
+        <p class="pricecon">95<sup>99</sup></p> <!-- tu będzie :after dla "pln/msc" -->
       </div>
       <ul>
         <li>Zakup towaru + dowóz</li>
@@ -109,7 +113,7 @@
       </div>
       <h3>advance plan</h3>
       <div class="price_circle">
-        <p class="price">211<sup>00</sup></p> <!-- tu będzie :after dla "pln/msc" -->
+        <p class="pricecon">211<sup>00</sup></p> <!-- tu będzie :after dla "pln/msc" -->
       </div>
       <ul>
         <li>Zakup towaru + dowóz</li>
@@ -119,29 +123,33 @@
       </ul>
       <button>Dołącz</button>
     </div>
+    </div>
   </div>
 </section>
 
 <!-- FORMA -->
-<section class="main_width">
+<section class="form">
+  <div class="main_width">
+   <div class="form_title">
   <h2>Kontakt</h2>
   <span class="green_underline"></span>
+   </div>
   <form>
-    <div>
+    <div class="form_content">
       <input type="text" placeholder="Imię">
       <input type="email" placeholder="email">
       <textarea placeholder="Wiadomość"></textarea>
     </div>
-    <div>
-      <div></div> <!-- tu będzie obrazek (background: url())-->
-      <label>
-        <input type="checkbox">
-        <p>zgadzam sie na przetwarzanie danych osobowych</p>
-      </label>
-      <input type="submit">
+    <div class="form_right">
+      <div class="form_image"></div> <!-- tu będzie obrazek (background: url())-->
+      <div class="checkbox">
+        <input type="checkbox" id="agree">
+        <label for="agree">Zgadzam sie na przetwarzanie danych osobowych
+      </div>
+      <input type="submit" value="Wyślij">
     </div>
-
   </form>
+  </div>
 </section>
 
 <!-- FOOTER -->
