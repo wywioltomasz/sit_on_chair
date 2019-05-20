@@ -59,6 +59,7 @@ header ul li a {
     color: white;
 }
 
+
 /*
    S
     L
@@ -106,7 +107,7 @@ header ul li a {
     margin-bottom: 40px;
 
 }
-.greentext {
+.slider__content .greentext {
     color: #39BF9F;
     font-weight: 700;
 }
@@ -145,6 +146,9 @@ header ul li a {
     bottom: 45%;
     font-weight: 300;
     color: #39BF9F;
+}
+.slider button:hover {
+    border: 1px solid white;
 }
 
 /*
@@ -440,7 +444,7 @@ form {
     width: 55%;
     margin-top: 25px;
 }
-form input, form textarea {
+form .form_content input, form .form_content textarea {
     display: block;
     margin-top: 30px;
     margin-left: 20px;
@@ -450,11 +454,12 @@ form input, form textarea {
     font-size: 25px;
     padding-left: 10px;
 }
-form textarea {
+form .form_content textarea {
     padding-top: 12px;
     height: 180px;
     resize: none;
 }
+
 ::placeholder {
     color: #e4e4e4;
 }
@@ -477,25 +482,102 @@ form textarea {
 .checkbox {
     display: flex;
     justify-content: space-around;
-    margin-top: -30px;
-    font-size: 20px;
+    margin-top: -70px;
+    margin-left: -30px;
+    font-size: 18px;
     color: #cccccc;
     font-weight: 500;
+    padding: 30px 30px 30px 0;
+    width: 420px;
+
 
 
 }
 .checkbox input{
     width: 20%;
     margin-top: 3px;
+
 }
 
 .form_right input[type=submit] {
     background-color: #39BF9F;
+    border: none;
     text-transform: uppercase;
-    font-size: 23px;
+    font-size: 30px;
     color: white;
     font-weight: 700;
-    width: 300px;
-    height: 50px;
+    width: 382px;
+    height: 70px;
     border-radius: 7px;
+    margin-left: -30px;
+    margin-top: 5px;
+}
+
+
+.checkbox input {
+    display: block;
+    opacity: 0;
+    height: 50px;
+    position: absolute;
+    width: 50px;
+    cursor: pointer;
+}
+
+.checkbox label {
+    display: block;
+    padding-left: 65px;
+    position: relative;
+    font-size: 22px;
+    color: #cecece;
+    cursor: pointer;
+}
+
+.checkbox label::before, .checkbox label::after {
+    border: 1px solid rgba(57, 191, 159, 0.4);
+    content: "";
+    display: block;
+    left: 0;
+    height: 45px;
+    position: absolute;
+    width: 45px;
+    top: 0;
+}
+.checkbox label::after {
+    background: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20preserveAspectRatio%3D%22xMidYMid%22%20width%3D%2233.875%22%20height%3D%2233%22%20viewBox%3D%220%200%2033.875%2033%22%3E%0A%20%20%3Cpath%20d%3D%22M9.470%2C15.209%20L14.061%2C24.104%20C14.061%2C24.104%2021.522%2C6.026%2033.287%2C-0.000%20C33.000%2C4.304%2031.852%2C8.035%2033.861%2C12.626%20C28.696%2C13.774%2018.078%2C26.687%2014.635%2C33.000%20C9.756%2C26.974%204.017%2C22.382%20-0.000%2C20.948%20L9.470%2C15.209%20Z%22%20fill%3D%22%2327c7ab%22/%3E%0A%3C/svg%3E%0A") no-repeat center;
+    border: 0;
+    display: none;
+}
+
+.checkbox input:checked + label::after {
+    display: block;
+}
+
+footer .main_width{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+footer p {
+    margin-left: 20px;
+    font-size: 16px;
+    color: darkgray;
+}
+.footerlogos p {
+    font-weight: 600;
+    font-size: 20px;
+}
+.bold_logo {
+    font-weight: 800;
+}
+
+.footerlogos {
+    width: 500px;
+    display: flex;
+    justify-content: space-around;
+}
+.footer__logo {
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    display: inline-block;
 }
